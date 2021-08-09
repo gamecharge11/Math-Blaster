@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math blaster</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <audio src="../assets/audio/musicLvl.mp3" autoplay loop></audio>
+    <div
+        style="background-color:rgba(255,255,255,0.4);display: flex;justify-content: center;flex-direction: column;text-align:center;height: 600px;align-items: center;width:90vw;border-radius:20px;backdrop-filter: blur(2px);border: 1px solid white;">
+        <div style="display: flex;justify-content: space-evenly;align-items: center;width: 900px;">
+            <h1 id="question">What is <span id="num1"></span> <span id="operator"></span> <span id="num2"></span>?</h1>
+            <div style="text-align: center;">
+                <p id="timer"
+                    style="font-size: 3em;font-family: sans-serif;color: white;-webkit-text-stroke: 1px black;">
+                    <span style="font-size: 0.9em;">Time left:<span id="time">15</span></p>
+                <p style="font-size: 3em;font-family: sans-serif;color: white;-webkit-text-stroke: 1px black;"> Life:
+                    <span id="lifes">3</span></p>
+                <p style="font-size: 3em;font-family: sans-serif;color: white;-webkit-text-stroke: 1px black;">Score:
+                    <span id="score">0</span></p>
+            </div>
+        </div>
+
+        <div class="targets">
+            <div class="target" id="target-1"></div>
+            <div class="target" id="target-2"></div>
+            <div class="target" id="target-3"></div>
+        </div>
+    </div>
+</body>
+<script src="./game.js"></script>
+</body>
+
+</html>
