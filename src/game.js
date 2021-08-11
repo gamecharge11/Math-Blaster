@@ -9,7 +9,7 @@ var diffTime = 15;
 //timer
 var interval = setInterval(() => {
     if (Number(timeUpdate.innerHTML) == 0) {
-        location.href = "gameOver.html?b=timeup"
+        location.href = `gameOver.html?b=timeup&score=${scoreDis.innerHTML}`
     } else {
         timeUpdate.innerHTML = Number(timeUpdate.innerHTML) - 1
     }
