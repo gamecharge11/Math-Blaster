@@ -28,5 +28,5 @@ playAgainBtn.onclick = () => {
 const timeUp = urlSearch.get("b")
 
 if (timeUp == 'timeup') {
-    scoreDis.innerHTML = 0
+    scoreDis.innerHTML = score
 }
